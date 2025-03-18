@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link id="main-stylesheet" href="./css/main.css" rel="stylesheet">
+    <link id="alt-stylesheet" rel="stylesheet" href="./css/alt.css" disabled>
+    <title>GeriSec - Kezdőlap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="print.css" media="print">
+    
+
+</head>
+<body style="background-color: #f7f6f2;">
+    <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
+    <div id="loader" style="position:fixed;top:0;left:0;width:100%;height:100%;background:white;display:flex;align-items:center;justify-content:center;z-index:9999;">
+        <div style="border: 4px solid #ccc; border-top: 4px solid #0d4555; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite;"></div>
+    </div>
+    <div class="main-container">
+    <header class="container">
+        <nav class="navbar">
+            <a class="gerisec" href="index.html">GeriSec</a>
+            <div class="menu">
+                <a class="menu-point" href="index.html"><b>Kezdőlap</b></a>
+                <div class="dropdown">
+                    <button class="menu-point">Szolgáltatások</button>
+                        <div class="dropdown-content">
+                            <a href="zarnyitas.html">Zárnyitás</a>
+                            <a href="zarcsere.html">Zárcsere</a>
+                            <a href="betores.html">Betörés utáni helyreállítás</a>
+                            <a href="belepteto.html">Beléptetőrendszerek</a>
+                            <a href="vagyonvedelmi.html">Vagyonvédelmi korszerűsítés</a>
+                        </div>
+                </div>
+                <a class="menu-point" href="bemutatkozas.html">Bemutatkozás</a>
+                <a class="menu-point" href="contact.html">Kapcsolat</a>
+                <button onclick="toggleAccessibility()" class="gyengenlato-mod">Gyengénlátó mód</button>
+            </div>
+        </nav>
+    </header>
+    </div>
+    <div class="kep-container">
+        <p class="kep" style="background-image: url(images/kep.jpg);"></p>
+        <div class="content">
+        <h2 class="nullhuszonnegy">0-24 ZÁRSZERVIZ</h2>
+        <button class="telszam">+36 70 602 5790</button>
+        </div>
+    </div>
+        
+    <div class="icons-container">
+        <a class="item" href="zarcsere.html">
+            <img class="icon" src="images/lock.png" alt="lakat">
+            <h1 class="cim">Zárcsere</h1>
+            <p class="szoveg">A biztonság az első! Ha elavult, sérült vagy megbízhatatlan a
+                    zárad, gyors és szakszerű zárcserét kínálunk. Szakembereink magas minőségű
+                    zárakkal modern és biztonságos megoldásokat nyújtanak. </p>
+        </a>
+        <a class="item" href="zarnyitas.html">
+            <img class="icon" src="images/key.png" alt="kulcs">
+            <p class="cim">Ajtónyitás</p>
+            <p class="szoveg">Kizárta magát, esetleg elveszett a kulcsa? Semmi gond!
+                    Sürgősségi zárnyitás keretében vollámgyors kiszállással, roncsolásmentesen
+                    állítjuk helyre ajtaját, akár a nap 24 órájában.</p>
+        </a>
+        <a class="item" href="vagyonvedelmi.html">
+            <img class="icon" src="images/house.png" alt="ház">
+            <p class="cim">Korszerűsítés</p>
+            <p class="szoveg">Növeld otthonod vagy irodád biztonságát modern
+                    zármegoldásokkal! A régi, elavult zárakat korszerű, magasabb védelmet
+                    nyújtó típusokra cseréljük.</p>
+        </a>
+    </div>
+        
+        
+    <hr class="vonal">
+        
+    <h1 class="cim2">Ügyfeleink őszinte véleménye</h1>
+        
+    <section class="velemeny-container">
+            
+        <div class="velemeny-box">
+            <h2 class="nev"><i class="fa-solid fa-user" style="color: #0d4555;"></i>
+                <a>F. László</a>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            </h2>
+            <p class="velemeny">„Az ajtóm zárja már többször akadozott, ezért hívtam őket egy ellenőrzésre.
+                Kiderült, hogy érdemes cserélni, és azonnal el is végezték a munkát. Gyors, precíz és korrekt
+                árakon dolgoznak. Ritka az ilyen jó szakember manapság!”</p>
+        </div>
+            <div class="velemeny-box">
+                <h2 class="nev"><i class="fa-solid fa-user" style="color: #0d4555;"></i>
+                    <a>K. Péter</a>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </h2>
+                <p class="velemeny">„Elvesztettem a lakáskulcsomat, és sürgősen szükségem
+                    volt egy zárszerelőre. Fél órán belül kiérkeztek, és pillanatok alatt
+                    kinyitották az ajtót sérülés nélkül! A zárcsere is gyorsan ment, nagyon
+                    profi és megbízható szolgáltatás. Csak ajánlani tudom!”</p>
+            </div>
+            <div class="velemeny-box">
+                <h2 class="nev"><i class="fa-solid fa-user" style="color: #0d4555;"></i>
+                <a>S. Andrea</a>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </h2>
+                <p class="velemeny">„Betörés után teljes zárkorszerűsítést kértem,
+                    és nagyon elégedett vagyok az eredménnyel. A szerelő nemcsak új,
+                    biztonságos zárakat szerelt fel, de hasznos tanácsokat is adott a
+                    további védelem érdekében. Most sokkal nyugodtabban alszom!”</p>
+            </div>
+    </section>
+    <hr class="vonal">
+    <div class="tablazat">
+    <details>
+        <summary><a class="cim">Zárszerelő Szolgáltatások Áttekintése</a></summary>
+        <table>
+            <thead>
+                <tr>
+                    <th>Szolgáltatás</th>
+                    <th>Ár (Ft)</th>
+                    <th>Időtartam</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Zárcsere</td>
+                    <td>15.000 Ft-tól</td>
+                    <td>1-2 óra</td>
+                </tr>
+                <tr>
+                    <td>Betörés utáni helyreállítás</td>
+                    <td>25.000 Ft-tól</td>
+                    <td>2-3 óra</td>
+                </tr>
+                <tr>
+                    <td>Sürgősségi zárnyitás</td>
+                    <td>20.000 Ft-tól + Kiszállási díj</td>
+                    <td>1 óra</td>
+                </tr>
+                <tr>
+                    <td>Beléptetőrendszer telepítése</td>
+                    <td>Árajánlat szerint</td>
+                    <td>4-5 óra</td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+</div>
+    <footer class="contact-bar">
+        <div class="contact-info">
+            <i class="fa-solid fa-envelope" style="color: #f7f6f2;"></i>
+            <a class="elerhetoseg"><b>gerisec@gmail.com</b></a>
+        </div>
+        <div class="contact-info">
+            <i class="fa-solid fa-phone" style="color: #f7f6f2;"></i>
+            <a class="elerhetoseg"><b>+36 70 602 5790</b></a>
+        </div>
+        <div class="contact-info">
+            <i class="fa-solid fa-house" style="color: #f7f6f2;"></i>
+            <a class="elerhetoseg" href="https://g.co/kgs/eAD93Vg" target="_blank"><b>9400 Sopron, Fő utca 25.</b></a>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('load', () => {
+            document.getElementById('loader').style.display = 'none';
+        });
+    </script>
+    
+    <script>
+        function toggleAccessibility() {
+            const mainStylesheet = document.getElementById('main-stylesheet');
+            const altStylesheet = document.getElementById('alt-stylesheet');
+        
+            if (altStylesheet.disabled) {
+                mainStylesheet.disabled = true;
+                altStylesheet.disabled = false;
+            } else {
+                mainStylesheet.disabled = false;
+                altStylesheet.disabled = true;
+            }
+        }
+    </script>
+</body>
+</html>

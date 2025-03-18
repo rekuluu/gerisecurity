@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link id="main-stylesheet" href="./css/main.css" rel="stylesheet">
+    <link id="alt-stylesheet" rel="stylesheet" href="./css/alt.css" disabled>
+    <title>GeriSec - Kapcsolat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/print.css" media="print">
+</head>
+<body style="background-color: #f7f6f2;">
+    <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
+    <header class="container">
+        <nav class="navbar">
+            <a class="gerisec" href="index.html">GeriSec</a>
+            <div class="menu">
+                <a class="menu-point" href="index.html">Kezdőlap</a>
+                <div class="dropdown">
+                    <button class="menu-point">Szolgáltatások</button>
+                        <div class="dropdown-content">
+                            <a href="zarnyitas.html">Zárnyitás</a>
+                            <a href="zarcsere.html">Zárcsere</a>
+                            <a href="betores.html">Betörés utáni helyreállítás</a>
+                            <a href="belepteto.html">Beléptetőrendszerek</a>
+                            <a href="vagyonvedelmi.html">Vagyonvédelmi korszerűsítés</a>
+                        </div>
+                </div>
+                <a class="menu-point" href="bemutatkozas.html">Bemutatkozás</a>
+                <a class="menu-point" href="contact.html"><b>Kapcsolat</b></a>
+                <button onclick="toggleAccessibility()" class="gyengenlato-mod">Gyengénlátó mód</button>
+            </div>
+        </nav>
+    </header>
+    <section class="contact">
+        <div class="form-container">
+        <h1>Lépj velünk kapcsolatba!</h1>
+        <p>Kérdésed van? Írj nekünk, és hamarosan válaszolunk!</p>
+        <form method="post" enctype="text/plain">
+            <input type="text" id="name" name="name" placeholder="Név" size="30" maxlength="50" required>
+            <input type="email" id="email" name="email" size="30" maxlength="100"
+            placeholder="abcdefg@email.com" required>
+            <input type="text" id="subject" name="subject" size="30" maxlength="100" placeholder="Tárgy" required>
+            <textarea name="message" rows="10" maxlength="200" placeholder="Üzenet" required></textarea>
+            
+            <div class="options">
+                <label><input type="radio" name="type" value="maganszemely" required> Magánszemély</label><br>
+                <label><input type="radio" name="type" value="ceg" required> Cég</label><br>
+                <label><input type="checkbox" name="newsletter"><span>Feliratkozom a hírlevélre</span></label>
+            </div>
+            <div class="buttons">
+                <button type="submit">Küldés</button>
+                <button type="reset">Törlés</button>
+            </div>
+        </form>
+        </div>
+    </section>
+    <footer class="contact-bar">
+        <div class="contact-info">
+            <i class="fa-solid fa-envelope" style="color: #f7f6f2;"></i>
+            <a class="elerhetoseg"><b>gerisec@gmail.com</b></a>
+        </div>
+        <div class="contact-info">
+            <i class="fa-solid fa-phone" style="color: #f7f6f2;"></i>
+            <a class="elerhetoseg"><b>+36 70 602 5790</b></a>
+        </div>
+        <div class="contact-info">
+            <i class="fa-solid fa-house" style="color: #f7f6f2;"></i>
+            <a class="elerhetoseg" href="https://g.co/kgs/eAD93Vg" target="_blank"><b>9400 Sopron, Fő utca 25.</b></a>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('load', () => {
+            document.getElementById('loader').style.display = 'none';
+        });
+        </script>
+    
+        <script>
+        function toggleAccessibility() {
+            const mainStylesheet = document.getElementById('main-stylesheet');
+            const altStylesheet = document.getElementById('alt-stylesheet');
+        
+            if (altStylesheet.disabled) {
+                mainStylesheet.disabled = true;
+                altStylesheet.disabled = false;
+            } else {
+                mainStylesheet.disabled = false;
+                altStylesheet.disabled = true;
+            }
+        }
+        </script>
+</body>
